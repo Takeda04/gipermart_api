@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/Jost-Regular.ttf");
+}
+@font-face {
+  font-family: "Jost Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/Jost-Medium.ttf");
+}
+@font-face {
+  font-family: "Jost Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/Jost-Light.ttf");
+}
+@font-face {
+  font-family: "Jost ExtraBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/Jost-ExtraBold.ttf");
+}
+@font-face {
+  font-family: "Jost Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/Jost-Bold.ttf");
+}
+@font-face {
+  font-family: "Jost Black";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/Jost-Black.ttf");
+}
+
+html,
+body {
+  overflow-x: hidden;
+  color: #000;
+}
+* {
+  font-family: "Jost", sans-serif;
+}
+a {
+  color: #333;
+}
+.title {
+  font-size: 24px;
+}
+.pages {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+  font-size: 15px;
+}
+.pages div {
+  color: rgba(0, 0, 0, 0.6);
+  font-family: "Jost Bold";
+  font-size: 16px;
+}
+.f-regular {
+  font-family: "Jost" !important;
+}
+.f-light {
+  font-family: "Jost Light" !important;
+}
+.f-medium {
+  font-family: "Jost Medium" !important;
+}
+.f-extrabold {
+  font-family: "Jost ExtraBold" !important;
+}
+.f-bold {
+  font-family: "Jost Bold" !important;
+}
+.f-black {
+  font-family: "Jost Black" !important;
+}
+.red:hover {
+  color: rgb(228, 69, 66);
+}
+fieldset {
+  transition: border 0.4s;
+}
+.Mui-focused fieldset {
+  border-color: rgb(254, 238, 0) !important;
+}
+.yellow-btn-hover {
+  background: rgb(254, 238, 0) !important;
+  color: rgba(0, 0, 0, 0.87) !important;
+  box-shadow: none !important;
+  text-transform: inherit !important;
+  font-family: "Jost Medium" !important;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms !important;
+}
+.yellow-btn-hover:hover {
+  background: rgb(255, 206, 57) !important;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px -1px,
+    rgba(0, 0, 0, 0.14) 0px 4px 5px 0px, rgba(0, 0, 0, 0.12) 0px 1px 10px 0px !important;
+}
+.scrollTop {
+  position: fixed !important;
+  bottom: -100%;
+  left: 30px;
+  background: #fff !important;
+  border: 8px solid rgba(0, 0, 0, 0.08) !important;
+  transition: all 0.8s !important;
+}
+.scrollTop.show {
+  bottom: 50px !important;
+}
+@media (max-width: 767px) {
+  .scrollTop.show {
+    bottom: 65px !important;
+  }
+}
+.scrollTop:hover {
+  border-color: rgba(0, 0, 0, 0.18) !important;
+}
+.other {
+  padding: 1.5rem 0;
+  min-height: 75vh;
+}
+.other p {
+  letter-spacing: 0.00938em;
+  line-height: 1.5;
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #000;
+}
+.other .title {
+  font-family: "Jost Medium" !important;
+  line-height: 1.2 !important;
+  margin-top: 1rem !important;
+  margin-bottom: 10px !important;
+}
+.other a {
+  color: red !important;
+}
+.other a.gray {
+  color: #333 !important;
+}
+.gray {
+  color: #999 !important;
+}

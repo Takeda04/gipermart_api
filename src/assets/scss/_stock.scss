@@ -1,0 +1,26 @@
+.stock {
+  img {
+    max-height: 240px;
+    width: 100%;
+    object-fit: contain;
+  }
+  .slick-next {
+    top: -20px;
+    right: 0;
+    width: 24px;
+    height: 24px;
+    &:hover {
+      color: red !important;
+    }
+  }
+  .slick-prev {
+    top: -20px;
+    left: auto;
+    right: 35px;
+    width: 24px;
+    height: 24px;
+    &:hover {
+      color: red !important;
+    }
+  }
+}

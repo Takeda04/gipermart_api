@@ -1,0 +1,52 @@
+.special-order {
+    .brand{
+        display: block;
+        border: 1px solid rgb(229, 229, 229);
+        height: 400px;
+        box-shadow: unset;
+        padding: 20px;
+        transition: all 0.4s;
+        &:hover{
+            color: #E44542;
+            box-shadow: rgba(0, 0, 0, 0.18) 0px -3px 8px;
+        }
+        .brand-image{
+            padding: 20px 0;
+            img{
+                width: 100%;
+                max-height: 200px;
+                object-fit: contain;
+            }
+        }
+        .brand-name{
+            font-size: 24px;
+            line-height: 1.33;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .brand-text{
+            font-size: 15px;
+        }
+    }
+  .slick-next {
+    top: -20px;
+    right: 0;
+    width: 24px;
+    height: 24px;
+    color: #E44542;
+    &:hover{
+        color: red !important;
+    }
+  }
+  .slick-prev {
+    top: -20px;
+    left: auto;
+    right: 35px;
+    width: 24px;
+    height: 24px;
+    color: #E44542;
+    &:hover{
+        color: red !important;
+    }
+  }
+}

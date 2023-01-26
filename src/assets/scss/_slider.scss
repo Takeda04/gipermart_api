@@ -1,0 +1,38 @@
+.slider {
+  max-height: 310px;
+  overflow: hidden;
+  .slick-arrow {
+    border-radius: 50%;
+    z-index: 10;
+    width: 42px;
+    height: 42px;
+    font-size: 16px;
+    opacity: 0;
+    transition: 0.4s ease 0s;
+    circle {
+      stroke: #fff !important;
+    }
+    &:hover {
+      background: rgba(255,255,255,0.5);
+    }
+  }
+  &:hover {
+    .slick-arrow {
+      opacity: 1;
+    }
+  }
+  a {
+    outline: none;
+    border: none;
+  }
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .slick-prev {
+    left: 8px;
+  }
+  .slick-next {
+    right: 8px;
+  }
+}

@@ -1,0 +1,62 @@
+.user-sidebar {
+  display: flex;
+  flex-direction: column;
+  .item {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.75rem;
+    border: 1.5px solid rgb(128, 128, 128);
+    gap: 1rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    &.active {
+      border: 1.5px solid rgb(0, 0, 0);
+    }
+  }
+}
+.order-section {
+  .css-1a4cg4j-MuiButtonBase-root-MuiTab-root {
+    font-family: "Jost Medium" !important;
+  }
+  .css-1a4cg4j-MuiButtonBase-root-MuiTab-root.Mui-selected,
+  .css-1mrn996.Mui-selected,
+  .css-axpu1l {
+    color: #feee00 !important;
+  }
+  .css-11yukd5-MuiTabs-indicator {
+    background: #feee00 !important;
+  }
+}
+.order-block {
+  margin-top: 1rem;
+}
+.order-cart {
+  img {
+    min-width: 120px;
+    width: 120px;
+    object-fit: contain;
+    height: auto;
+  }
+  .media-grid {
+    @media (max-width: 769px) {
+      display: unset;
+    }
+  }
+  .media-pt {
+    @media (max-width: 769px) {
+      padding-top: 6px;
+    }
+  }
+  .status-payment {
+    color: #e44542;
+  }
+  .order-price {
+    color: #e44542;
+  }
+  strong {
+    font-family: "Jost" !important;
+  }
+  .order-name {
+    font-family: "Jost Bold" !important;
+  }
+}

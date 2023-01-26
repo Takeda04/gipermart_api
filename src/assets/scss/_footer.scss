@@ -1,0 +1,33 @@
+.footer {
+  background: rgb(245, 245, 246);
+  padding-top: 40px;
+  color: #333;
+  .footer-logo {
+    min-width: 190px;
+    width: 190px;
+    height: 50px;
+  }
+  .footer__link {
+    margin-bottom: 1rem;
+    font-size: 15px;
+    a{
+        display: block;
+        line-height: 1.5;
+    }
+    &:hover a{
+        color: #E44542;
+    }
+  }
+  .copyright{
+    margin-top: 40px;
+    padding: 40px 0;
+    color: #333;
+    background: rgb(234, 234, 234);
+    img{
+        width: 100px;
+        min-width: 100px;
+        height: 25px;
+        object-fit: contain;
+    }
+  }
+}

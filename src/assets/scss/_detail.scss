@@ -1,0 +1,111 @@
+.detail {
+  .detail-page div{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .laptop-detail-name{
+    display: none;
+    @media (min-width: 769px){
+      display: block;
+    }
+  }
+  .mobile-detail-name{
+    display: none;
+    @media (max-width: 769px){
+      display: block;
+    }
+  }
+  .main-img {
+    height: 435px;
+    object-fit: contain;
+    margin-bottom: 1.5rem;
+    @media (max-width: 767px) {
+      height: 300px;
+    }
+    img {
+      height: 435px;
+      width: 100%;
+      object-fit: contain;
+      @media (max-width: 767px) {
+        height: 300px;
+      }
+    }
+  }
+  .carousel-img {
+    outline: none !important;
+  }
+  .image-gallery {
+    .carousel-img {
+      position: relative;
+      transition: all 0.5s;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: unset;
+        scale: 0.8;
+        transition: all 0.5s;
+      }
+      &:hover::before {
+        scale: 1;
+        background: rgba(0, 0, 0, 0.5);
+      }
+      img {
+        min-width: 100%;
+        width: 100%;
+        height: 80px;
+        object-fit: contain;
+        transition: all 0.5s;
+        @media (max-width: 767px) {
+          min-width: 80%;
+          width: 80%;
+        }
+      }
+    }
+  }
+  .detail-counter {
+    border: 2px solid rgb(237, 237, 237);
+    height: 2.25rem;
+    width: 100%;
+    box-sizing: content-box;
+    .minus {
+      height: 36px;
+    }
+    .count {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgb(237, 237, 237);
+      color: #000;
+      font-size: 24px;
+      height: 36px;
+      text-align: center;
+    }
+    .plus {
+      height: 36px;
+    }
+  }
+  .css-1a4cg4j-MuiButtonBase-root-MuiTab-root.Mui-selected,
+  .css-1mrn996.Mui-selected {
+    color: #feee00 !important;
+  }
+  .css-11yukd5-MuiTabs-indicator,
+  .css-axpu1l {
+    background: #feee00 !important;
+  }
+  .css-1osbcj6-MuiButtonBase-root-MuiButton-root,
+  .css-1oajiue {
+    color: rgba(0, 0, 0, 0.54) !important;
+    border: 1px solid rgba(0, 0, 0, 0.12) !important;
+    &.active {
+      color: #feee00 !important;
+      background: rgba(254, 238, 0, 0.08) !important;
+    }
+  }
+}
