@@ -55,13 +55,9 @@ const Recommendations = () => {
         <Link to="">
           <Title title={"Гипермарт Рекомендует"} style="mt-8 mb-4 red" />
         </Link>
-        {/* <Slider {...settings} className="recommendations"> */}
-        <div style={{display: "flex", justifyContent: "center"}}>
-          <div style={{display: "flex"}}>
+        <Slider {...settings} className="recommendations">
             <Cart/>
-          </div>
-        </div>
-        {/* </Slider> */}
+        </Slider>
       </Container>
     </div>
   );
