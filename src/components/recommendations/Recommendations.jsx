@@ -57,6 +57,13 @@ const Recommendations = () => {
         </Link>
         <Slider {...settings} className="recommendations">
             <Cart/>
+            <Cart/>
+            <Cart/>
+            <Cart/>
+            <Cart/>
+            <Cart/>
+            <Cart/>
+            <Cart/>
         </Slider>
       </Container>
     </div>
